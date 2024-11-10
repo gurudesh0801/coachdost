@@ -20,16 +20,17 @@ const Navbar = () => {
       <div className="navbar-center">
         <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Home</Link> {/* Use Link instead of <a> */}
+            <Link to="/">Solution</Link> {/* Use Link instead of <a> */}
           </li>
           <li>
             <Link to="/about">About</Link> {/* Use Link instead of <a> */}
           </li>
           <li>
-            <Link to="/services">Services</Link> {/* Use Link instead of <a> */}
+            <Link to="/blogs">Blog</Link> {/* Use Link instead of <a> */}
           </li>
           <li>
-            <Link to="/contact">Contact</Link> {/* Use Link instead of <a> */}
+            <Link to="/appointment">Appointment</Link>{" "}
+            {/* Use Link instead of <a> */}
           </li>
         </ul>
       </div>
