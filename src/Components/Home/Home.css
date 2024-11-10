@@ -117,8 +117,8 @@
 .hero-image::before {
   content: "";
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 20%;
+  left: 9%;
   width: 500px; /* Adjust size as needed */
   height: 500px;
   background: radial-gradient(
