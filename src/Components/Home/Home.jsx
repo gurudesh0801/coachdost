@@ -79,12 +79,16 @@ const Home = () => {
       {/* About Section */}
       <div className="about-container" id="#about">
         <section className="intro-section">
-          <h1>About Our LMS Platform</h1>
+          <h1>
+            About <span>CoachDost</span>
+          </h1>
           <p>
-            Welcome to our Learning Management System! Our platform is designed
-            to empower learners and educators by providing seamless access to
-            resources, structured learning paths, and interactive tools to
-            enhance the learning experience.
+            At <b>CoachDost</b>, we empower learners to excel in careers,
+            relationships, corporate life, and personal growth. Our platform
+            combines expert coaching with practical knowledge, helping
+            individuals thrive in every aspect of their lives. Whether you're
+            advancing in your profession or seeking a balanced lifestyle,
+            Coachdost is here to guide you on your journey to success.
           </p>
         </section>
 
@@ -113,6 +117,7 @@ const Home = () => {
         </section>
       </div>
       {/* Blog Section */}
+      
     </>
   );
 };

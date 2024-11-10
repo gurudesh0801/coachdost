@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-about">
           <h2>About Us</h2>
           <p>
-            Your LMS platform for easy learning and skill development. Our
+            CoachDost platform for easy learning and skill development. Our
             mission is to empower educators and students with seamless online
             tools and resources.
           </p>
