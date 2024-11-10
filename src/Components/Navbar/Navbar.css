@@ -186,8 +186,7 @@
 
 .navbar-login {
   background-color: transparent;
-  color: #ff7b54;
-  border: 2px solid #ff7b54;
+  color: #000000;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -198,8 +197,7 @@
 
 .navbar-signup {
   background-color: transparent;
-  color: #ff7b54;
-  border: 2px solid #ff7b54;
+  color: #000000;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -230,7 +228,7 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 60px);
-    background-color: #90ffcf; /* Background matches gradient */
+    background-color: #ffffff; /* Background matches gradient */
     flex-direction: column;
     justify-content: center;
     align-items: center;

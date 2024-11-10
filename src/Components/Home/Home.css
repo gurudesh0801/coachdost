@@ -81,7 +81,7 @@
   font-weight: 600;
   color: #ffffff;
   background: transparent;
-  border: 2px solid #ff7b54;
+  border: 2px solid #dadada;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s ease-in-out; /* Smooth transition */
@@ -92,9 +92,9 @@
   padding: 14px 28px;
   font-size: 1.1rem; /* Slightly larger font */
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   border-radius: 30px;
-  background-color: #ff7b54;
+  background-color: #ffffff;
   cursor: pointer;
   transition: 0.3s ease-in-out; /* Smooth transition */
   animation: buttonPop 1s ease-out; /* Button animation */
