@@ -60,7 +60,7 @@ const Home = () => {
           Join Thousands of learners and access top-quality coaching.
         </p>
         <button className="cta-button">
-          <FaUser size={15} color="#333" />
+          <FaUser size={15} />
           &nbsp;Browse Coaches
         </button>
         <button className="cta-button demo-btn">

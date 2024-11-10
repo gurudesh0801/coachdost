@@ -4,7 +4,7 @@
 /* Navbar styling */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem 2rem;
   background: linear-gradient(
@@ -33,7 +33,7 @@
   font-weight: bold;
   color: #6c78ff; /* Deep, calming color */
   text-decoration: none;
-  margin-right: 2rem;
+  margin-left: 2rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -48,7 +48,7 @@
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
 }
 
