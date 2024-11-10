@@ -16,6 +16,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
 }
 
 /* Left section for logo */
@@ -33,7 +35,7 @@
   color: #242424; /* Deep, calming color */
   text-decoration: none;
   margin-left: 2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Center section for nav links */
@@ -61,6 +63,108 @@
 
 .navbar-links a:hover {
   color: #ff7b54; /* Soft orange for a subtle emphasis */
+}
+/* Search Navbar */
+
+.navbar-search-icon {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Enhanced Search Pop-up Styling */
+.search-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.search-popup-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 30px;
+  max-width: 500px;
+  width: 80%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  animation: scaleUp 0.3s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.search-popup-form input {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-right: 1rem;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+.search-popup-form input:focus {
+  background-color: #eaeaea;
+}
+
+.search-popup-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.search-popup-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Close button styling */
+.close-popup {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-popup:hover {
+  color: #ff5a2c;
 }
 
 /* Right section for login and signup */

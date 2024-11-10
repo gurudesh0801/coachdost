@@ -1,41 +1,56 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import "./Navbar.css"; // Your CSS file
+import { Link } from "react-router-dom";
+import { FiSearch } from "react-icons/fi";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    console.log("Searching for:", searchQuery);
+    setIsSearchOpen(false); // Close the search pop-up after search
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <div className="navbar-logo">
-          <Link to="/">CoachDost</Link> {/* Use Link for routing */}
+          <Link to="/">CoachDost</Link>
         </div>
       </div>
 
       <div className="navbar-center">
         <ul className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Solution</Link> {/* Use Link instead of <a> */}
+            <Link to="/">Solution</Link>
           </li>
           <li>
-            <Link to="/about">About</Link> {/* Use Link instead of <a> */}
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/blogs">Blog</Link> {/* Use Link instead of <a> */}
+            <Link to="/blogs">Blog</Link>
           </li>
           <li>
-            <Link to="/appointment">Appointment</Link>{" "}
-            {/* Use Link instead of <a> */}
+            <Link to="/appointment">Appointment</Link>
           </li>
         </ul>
       </div>
 
       <div className="navbar-right">
+        <button onClick={toggleSearch} className="navbar-search-icon">
+          <FiSearch size={25} color="#1d3557" />
+        </button>
         <button className="navbar-login">Login</button>
         <button className="navbar-signup">Sign Up</button>
       </div>
@@ -45,6 +60,24 @@ const Navbar = () => {
         <div className="menu-bar"></div>
         <div className="menu-bar"></div>
       </div>
+
+      {/* Enhanced Search Pop-up */}
+      {isSearchOpen && (
+        <div className="search-popup">
+          <form onSubmit={handleSearch} className="search-popup-form">
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <button type="submit">Search</button>
+          </form>
+          <button className="close-popup" onClick={toggleSearch}>
+            &times;
+          </button>
+        </div>
+      )}
     </nav>
   );
 };
