@@ -1,0 +1,132 @@
+/* Global Footer Styles */
+.footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 3rem 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1 1 250px;
+  padding: 1rem;
+}
+
+.footer-about h2,
+.footer-links h2,
+.footer-contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff7b54;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-about p,
+.footer-links ul,
+.footer-contact p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Quick Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ff7b54;
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+  color: #ff7b54;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-about p,
+  .footer-links ul li a,
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-about h2,
+  .footer-links h2,
+  .footer-contact h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
