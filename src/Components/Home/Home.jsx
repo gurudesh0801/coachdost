@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import LearningImage from "../../assets/images/image2.png"; // Adjust path as necessary
+import LearningImage from "../../assets/images/image9.png"; // Adjust path as necessary
 import { FaPlay, FaUser } from "react-icons/fa";
 
 const Home = () => {

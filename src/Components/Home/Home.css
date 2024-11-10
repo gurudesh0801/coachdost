@@ -114,24 +114,6 @@
   position: relative;
   animation: zoomIn 1.5s ease-out; /* Hero image zoom-in animation */
 }
-.hero-image::before {
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 9%;
-  width: 500px; /* Adjust size as needed */
-  height: 500px;
-  background: radial-gradient(
-    circle,
-    #7db7dc,
-    #1d3557
-  ); /* Gradient for effect */
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(1.1); /* Center and size the circle */
-  z-index: -1; /* Place behind the image */
-  opacity: 1; /* Adjust opacity for a softer look */
-  animation: floatBackgroundShape 15s linear infinite; /* Floating effect */
-}
 
 .hero-image img {
   width: 100%;
