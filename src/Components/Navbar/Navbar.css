@@ -31,10 +31,10 @@
 .navbar-logo a {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #2b2d42; /* Deep, calming color */
+  color: #6c78ff; /* Deep, calming color */
   text-decoration: none;
   margin-right: 2rem;
-  font-family: "Pacifico", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Center section for nav links */
