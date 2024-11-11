@@ -199,20 +199,23 @@
 
 .navbar-login:hover {
   transition: 1s;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  background-color: #b20000;
   cursor: pointer;
 }
 
 .navbar-signup {
   background-color: transparent;
-  color: #000000;
+  color: #ff6a00;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar-signup:hover {
-  transition: 1s;
-  transform: scale(1.1);
+  transition: 0.5s;
+  /* transform: scale(1.1); */
+  color: #000000;
   cursor: pointer;
+  background-color: #ff977b;
 }
 
 /* Menu icon for mobile */
