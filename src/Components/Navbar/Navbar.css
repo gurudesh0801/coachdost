@@ -10,7 +10,7 @@
     #ffffff,
     #ffffff
   ); /* Soft pastel gradient */
-  color: #2b2d42;
+  color: #0015ff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -30,7 +30,7 @@
 .navbar-logo a {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #242424; /* Deep, calming color */
+  color: #1d3557; /* Deep, calming color */
   text-decoration: none;
   margin-left: 2rem;
   font-family: "Poppins", sans-serif;
@@ -52,7 +52,7 @@
 }
 
 .navbar-links a {
-  color: #2b2d42;
+  color: #1d3557;
   text-decoration: none;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
@@ -60,7 +60,7 @@
 }
 
 .navbar-links a:hover {
-  color: #ff7b54; /* Soft orange for a subtle emphasis */
+  color: #ffc800; /* Soft orange for a subtle emphasis */
 }
 /* Search Navbar */
 
@@ -69,6 +69,7 @@
   border: none;
   font-size: 1.3rem;
   cursor: pointer;
+  color: #1d3557;
 }
 
 /* Enhanced Search Pop-up Styling */
@@ -171,7 +172,7 @@
   align-items: center;
   gap: 1rem;
   position: absolute;
-  right: 2rem;
+  right: 4rem;
 }
 
 .navbar-login,
@@ -191,8 +192,9 @@
 }
 
 .navbar-login:hover {
-  background-color: #ff7b54;
-  color: white;
+  transition: 1s;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .navbar-signup {
@@ -202,8 +204,9 @@
 }
 
 .navbar-signup:hover {
-  background-color: #ff7b54;
-  color: white;
+  transition: 1s;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /* Menu icon for mobile */

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  background: linear-gradient(135deg, #1d3557, #20494e);
+  background: linear-gradient(145deg, #1d3557, #79b6bc);
   color: #7afc4e;
   padding: 0 20px;
   overflow: hidden;
@@ -61,6 +61,11 @@
   opacity: 0;
   animation: fadeIn 2s ease-out forwards; /* Subtitle fade-in animation */
 }
+.dynamic-text {
+  background-color: #fff654;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .cursor {
   display: inline-block;
   width: 1px;
@@ -102,8 +107,8 @@
 }
 
 .cta-button:hover {
-  background-color: #ff7b54; /* Change background color on hover */
-  color: white; /* Text color on hover */
+  background-color: #fbeae5a2; /* Change background color on hover */
+  color: rgb(0, 0, 0); /* Text color on hover */
 }
 
 .hero-image {
