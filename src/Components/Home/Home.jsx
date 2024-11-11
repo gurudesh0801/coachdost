@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import LearningImage from "../../assets/images/image9.png"; // Adjust path as necessary
+import LearningImage from "../../assets/images/image2.png"; // Adjust path as necessary
 import { FaPlay, FaUser } from "react-icons/fa";
-import img1 from "../../assets/images/image1.png";
 import About from "../About/About";
 
 const Home = () => {
@@ -10,9 +9,9 @@ const Home = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const words = [
-    "Life.",
     "Relationship.",
     "Career.",
+    "Life.",
     "Public Speaking.",
     "Leadership.",
   ];
@@ -53,24 +52,25 @@ const Home = () => {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1 className="hero-title">
-            Empower Your Learning Journey <br /> in{" "}
+            Empower Your Learning Journey in{" "}
             <span className="dynamic-text">
               {displayText}
-              <span className="cursor"></span>
+              <span className="cursor">|</span>
             </span>
           </h1>
           <p className="hero-subtitle">
-            Transform your Life with personalized coaching and valuable
-            guidence.
+            Join Thousands of learners and access top-quality coaching.
           </p>
-          <button className="cta-button">
-            <FaUser size={15} />
-            &nbsp;Browse Coaches
-          </button>
-          <button className="cta-button demo-btn">
-            <FaPlay size={15} />
-            &nbsp;Get Demo
-          </button>
+          <div className="cta-buttons">
+            <button className="cta-button">
+              <FaUser size={15} />
+              &nbsp;Browse Coaches
+            </button>
+            <button className="cta-button demo-btn">
+              <FaPlay size={15} />
+              &nbsp;Get Demo
+            </button>
+          </div>
         </div>
         <div className="hero-image">
           <div className="image-overlay"></div>
@@ -79,6 +79,7 @@ const Home = () => {
       </div>
 
       <About />
+      {/* Additional Sections */}
     </>
   );
 };
