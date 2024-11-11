@@ -1,84 +1,50 @@
-import React, { useEffect, useState } from "react";
+// HeroSection.js
+
+import React from "react";
 import "./Home.css";
-import LearningImage from "../../assets/images/image9.png"; // Adjust path as necessary
-import { FaPlay, FaUser } from "react-icons/fa";
-import img1 from "../../assets/images/image1.png";
+import image from "../../assets/images/girlimg.png";
 import About from "../About/About";
+import Sec2 from "../Sec2/Sec2";
 
 const Home = () => {
-  const [displayText, setDisplayText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = [
-    "Life.",
-    "Relationship.",
-    "Career.",
-    "Public Speaking.",
-    "Leadership.",
-  ];
-
-  useEffect(() => {
-    const currentWord = words[currentWordIndex];
-
-    const handleTyping = () => {
-      setDisplayText((prevText) => {
-        if (!isDeleting) {
-          // Typing effect: add a character
-          const updatedText = currentWord.slice(0, prevText.length + 1);
-          if (updatedText === currentWord) {
-            setTimeout(() => setIsDeleting(true), 2000); // Pause before deleting
-          }
-          return updatedText;
-        } else {
-          // Deleting effect: remove a character
-          const updatedText = currentWord.slice(0, prevText.length - 1);
-          if (updatedText === "") {
-            setIsDeleting(false);
-            setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length); // Move to next word
-          }
-          return updatedText;
-        }
-      });
-    };
-
-    const typingSpeed = isDeleting ? 100 : 150; // Faster speed when deleting
-    const typingTimeout = setTimeout(handleTyping, typingSpeed);
-
-    return () => clearTimeout(typingTimeout); // Cleanup timeout on unmount
-  }, [displayText, isDeleting, currentWordIndex]);
-
   return (
     <>
-      <div className="hero-section">
-        <div className="hero-overlay"></div>
+      <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            Empower Your Learning Journey <br /> in{" "}
-            <span className="dynamic-text">
-              {displayText}
-              <span className="cursor"></span>
-            </span>
+            Upgrade Yourself, and Prepare a Better Future
           </h1>
           <p className="hero-subtitle">
-            Transform your Life with personalized coaching and valuable
-            guidence.
+            Something bigger to achieve your dreams so we provide all of these
+            great things for you.
           </p>
-          <button className="cta-button">
-            <FaUser size={15} />
-            &nbsp;Browse Coaches
-          </button>
-          <button className="cta-button demo-btn">
-            <FaPlay size={15} />
-            &nbsp;Get Demo
-          </button>
+          <div className="hero-buttons">
+            <button className="get-started">Get Started</button>
+            <button className="watch-video">
+              <span className="play-icon">▶</span> Watch Video
+            </button>
+          </div>
+          <div className="hero-stats">
+            <div className="stat-item">
+              <h2>9,500+</h2>
+              <p>Education Partners</p>
+            </div>
+            <div className="stat-item">
+              <h2>10K</h2>
+              <p>Active Students</p>
+            </div>
+            <div className="stat-item">
+              <h2>24/7</h2>
+              <p>All Day Consultation</p>
+            </div>
+          </div>
         </div>
         <div className="hero-image">
-          <div className="image-overlay"></div>
-          <img src={LearningImage} alt="Learning" />
+          <img src={image} alt="Hero" />
         </div>
       </div>
-
       <About />
+      <Sec2 />
     </>
   );
 };

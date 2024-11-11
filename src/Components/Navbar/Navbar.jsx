@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
+import logo from "../../assets/images/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -26,7 +27,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <div className="navbar-logo">
-          <Link to="/">CoachDost</Link>
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
         </div>
       </div>
 

@@ -3,7 +3,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #79f2ff, #e0eafc);
+  background: linear-gradient(135deg, #94c5c9, #94c5c9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@
 /* Simple text fade-in without glow */
 .text-display {
   font-size: 3rem;
-  color: #333; /* Simple black text */
+  color: #fffccf;
   opacity: 0;
   animation: fadeInAndScale 2s ease-in-out forwards 0s;
   font-weight: bold;
